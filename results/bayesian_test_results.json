@@ -1,0 +1,45 @@
+{
+    "model": "Bayesian Latent Variable Sketch-to-Face",
+    "dataset": {
+        "train": 18966,
+        "validation": 2371,
+        "test": 2371
+    },
+    "input_shape": [
+        1,
+        224,
+        224
+    ],
+    "output_shape": [
+        3,
+        224,
+        224
+    ],
+    "test_metrics": {
+        "loss": 0.1566344986468214,
+        "reconstruction_loss": 0.1566334466097577,
+        "kl": 0.0010519148377314343,
+        "l1": 0.1066352728422761,
+        "ssim": 0.7500091306221027,
+        "psnr_db": 22.65874991072941
+    },
+    "deterministic_baseline": {
+        "loss": 0.162897,
+        "l1": 0.111498,
+        "ssim": 0.743004,
+        "psnr_db": 22.28
+    },
+    "improvement": {
+        "loss_difference": -0.006262501353178573,
+        "l1_difference": -0.004862727157723901,
+        "ssim_difference": 0.007005130622102729,
+        "psnr_difference_db": 0.37874991072940745
+    },
+    "uncertainty": {
+        "num_latent_samples": 8,
+        "mean_uncertainty": 0.0022540660575032234,
+        "median_uncertainty": 0.0021521970629692078,
+        "max_uncertainty": 0.011965976096689701,
+        "mean_pairwise_sample_difference": 0.002640244093657072
+    }
+}

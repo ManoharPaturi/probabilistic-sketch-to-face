@@ -1,0 +1,41 @@
+{
+    "dataset": {
+        "train": 18966,
+        "validation": 2371,
+        "test": 2371,
+        "image_size": "224x224"
+    },
+    "deterministic_baseline": {
+        "loss": 0.162897,
+        "l1": 0.111498,
+        "ssim": 0.743004,
+        "psnr_db": 22.28
+    },
+    "bayesian_model": {
+        "loss": 0.156634,
+        "l1": 0.106635,
+        "ssim": 0.750009,
+        "psnr_db": 22.659
+    },
+    "improvements": {
+        "loss_absolute": 0.006262999999999991,
+        "loss_relative_percent": 3.8447607997691735,
+        "l1_absolute": 0.004863000000000006,
+        "l1_relative_percent": 4.361513210999306,
+        "ssim_absolute": 0.007005000000000039,
+        "ssim_relative_percent": 0.9427943860329203,
+        "psnr_absolute_db": 0.3789999999999978,
+        "psnr_relative_percent": 1.7010771992818572
+    },
+    "uncertainty": {
+        "num_latent_samples": 8,
+        "mean_uncertainty": 0.002254,
+        "median_uncertainty": 0.002152,
+        "maximum_uncertainty": 0.011966,
+        "mean_sample_variability": 0.00264
+    },
+    "models": {
+        "deterministic": "/kaggle/working/sketch_to_face/final_results/models/deterministic_sketch_to_face_final.pth",
+        "bayesian": "/kaggle/working/sketch_to_face/final_results/models/bayesian_sketch_to_face_final.pth"
+    }
+}

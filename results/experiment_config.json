@@ -1,0 +1,22 @@
+{
+    "project": "Probabilistic Sketch-to-Face Generation",
+    "dataset": "UTKFace paired face-sketch dataset",
+    "image_size": "224x224",
+    "train_samples": 18966,
+    "validation_samples": 2371,
+    "test_samples": 2371,
+    "batch_size": 16,
+    "baseline": {
+        "type": "Deterministic Encoder-Decoder",
+        "test_ssim": 0.743004,
+        "test_psnr_db": 22.28
+    },
+    "bayesian": {
+        "type": "Bayesian Latent Variable Encoder-Decoder",
+        "kl_max_weight": 0.001,
+        "kl_warmup_epochs": 10,
+        "latent_sampling": "Reparameterization Trick",
+        "test_ssim": 0.750009,
+        "test_psnr_db": 22.659
+    }
+}

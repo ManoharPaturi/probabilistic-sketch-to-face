@@ -1,0 +1,13 @@
+{
+    "model": "Deterministic Encoder-Decoder",
+    "dataset": "UTKFace paired sketch-face",
+    "train_samples": 18966,
+    "validation_samples": 2371,
+    "test_samples": 2371,
+    "image_size": 224,
+    "batch_size": 16,
+    "test_loss": 0.1628969727639456,
+    "test_l1": 0.11149769380393283,
+    "test_ssim": 0.7430036085308579,
+    "test_psnr": 22.27957759641207
+}

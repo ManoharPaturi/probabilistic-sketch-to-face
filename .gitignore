@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.pth
+checkpoints/
+weights/*.pth
+.venv/
+venv/
+.DS_Store
+result*.png
