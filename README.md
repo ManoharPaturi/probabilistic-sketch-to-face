@@ -83,6 +83,10 @@ Trained weights (`deterministic_sketch_to_face_final.pth`, `bayesian_sketch_to_f
 
 Sketches: OpenCV grayscale → 224×224 with `INTER_AREA` → [0, 1]. Faces: OpenCV RGB → 224×224 `INTER_AREA` → [-1, 1]. Both models end in `Tanh`. The model's colour output is sensitive to the resize filter, so use [`src/preprocess.py`](src/preprocess.py) rather than another image library.
 
+## Documentation
+
+Full documentation is in [`docs/`](docs/README.md): [getting started](docs/getting-started.md), [methodology](docs/methodology.md), [architecture](docs/architecture.md), [training](docs/training.md), [API reference](docs/api-reference.md), [results](docs/results.md), and [reproducibility & limitations](docs/reproducibility.md).
+
 ## Repository layout
 
 ```
@@ -95,6 +99,7 @@ evaluate.py       test-set metrics and mean uncertainty
 infer.py          single-sketch inference with uncertainty map
 data/splits/      train / val / test CSVs
 results/          metrics, training histories, figures
+docs/             full documentation
 ```
 
 ## Team D16
@@ -114,3 +119,7 @@ results/          metrics, training histories, figures
 * Kendall & Gal (2017). *What Uncertainties Do We Need in Bayesian Deep Learning for Computer Vision?* NeurIPS. arXiv:1703.04977
 * Ronneberger, Fischer & Brox (2015). *U-Net.* MICCAI. arXiv:1505.04597
 * Zhang, Song & Qi (2017). *Age Progression/Regression by Conditional Adversarial Autoencoder* (UTKFace). CVPR. arXiv:1702.08423
+
+## Contributing
+
+This repository does not accept outside contributions. See [CONTRIBUTING.md](CONTRIBUTING.md).
